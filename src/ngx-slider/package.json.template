@@ -8,8 +8,14 @@
     "license",
     "repository",
     "bugs",
-    "homepage"
+    "homepage",
+    "engines"
   ],
+  "peerDependencyRanges": {
+    "@angular/core": "^22.0.0",
+    "@angular/common": "^22.0.0",
+    "@angular/forms": "^22.0.0"
+  },
   "dependenciesToCopyFromMainPackageJson": [
     "detect-passive-events",
     "rxjs"

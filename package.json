@@ -1,5 +1,5 @@
 {
-  "name": "@angular-slider/ngx-slider",
+  "name": "@solidexpert/ngx-slider",
   "version": "22.0.0",
   "private": true,
   "description": "Self-contained, mobile friendly slider component for Angular based on angularjs-slider",
@@ -15,12 +15,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-slider/ngx-slider.git"
+    "url": "https://github.com/solidexpert-ltd/ngx-slider.git"
   },
   "bugs": {
-    "url": "https://github.com/angular-slider/ngx-slider/issues"
+    "url": "https://github.com/solidexpert-ltd/ngx-slider/issues"
   },
-  "homepage": "https://github.com/angular-slider/ngx-slider#readme",
+  "homepage": "https://github.com/solidexpert-ltd/ngx-slider#readme",
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26"
+  },
   "scripts": {
     "prepare": "npm run prepare:lib && npm run prepare:demo-app",
     "prepare:lib": "node scripts/generate-lib-files.js",
@@ -37,21 +40,21 @@
     "ci": "npm run test:once && playwright test && npm run lint && npm run build:lib && npm run build:demo-app"
   },
   "dependencies": {
-    "@angular/animations": "^22.0.1",
-    "@angular/common": "^22.0.1",
-    "@angular/compiler": "^22.0.1",
-    "@angular/core": "^22.0.1",
-    "@angular/forms": "^22.0.1",
-    "@angular/platform-browser": "^22.0.1",
-    "@angular/platform-browser-dynamic": "^22.0.1",
-    "@angular/router": "^22.0.1",
+    "@angular/animations": "22.3.0",
+    "@angular/common": "22.3.0",
+    "@angular/compiler": "22.3.0",
+    "@angular/core": "22.3.0",
+    "@angular/forms": "22.3.0",
+    "@angular/platform-browser": "22.3.0",
+    "@angular/platform-browser-dynamic": "22.3.0",
+    "@angular/router": "22.3.0",
     "@ng-bootstrap/ng-bootstrap": "^20.0.0-rc.0",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.11.3",
     "detect-passive-events": "^2.0.3",
     "rxjs": "^7.8.2",
     "tslib": "^2.8.1",
-    "zone.js": "~0.15.1"
+    "zone.js": "~0.16.3"
   },
   "devDependencies": {
     "@angular-eslint/builder": "^22.0.0",
@@ -59,9 +62,10 @@
     "@angular-eslint/eslint-plugin-template": "^22.0.0",
     "@angular-eslint/schematics": "^22.0.0",
     "@angular-eslint/template-parser": "^22.0.0",
-    "@angular/build": "^22.0.1",
-    "@angular/cli": "^22.0.1",
-    "@angular/compiler-cli": "^22.0.1",
+    "@angular/build": "22.3.0",
+    "@angular/cli": "22.3.0",
+    "@angular/compiler-cli": "22.3.0",
+    "@angular/localize": "22.3.0",
     "@playwright/test": "^1.41.2",
     "@types/jasmine": "~5.1.13",
     "@types/node": "^24.0.0",
@@ -79,19 +83,30 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "^2.1.0",
     "mkdirp": "^3.0.1",
-    "ng-packagr": "^22.0.0",
+    "ng-packagr": "22.3.0",
     "prismjs": "^1.30.0",
     "rimraf": "^6.1.2",
     "ts-node": "~10.9.2",
     "typedoc": "~0.28.15",
-    "typescript": "6.0.3"
+    "typescript": "~6.0.3"
   },
   "overrides": {
+    "@angular/animations": "22.3.0",
+    "@angular/common": "22.3.0",
+    "@angular/compiler": "22.3.0",
+    "@angular/compiler-cli": "22.3.0",
+    "@angular/core": "22.3.0",
+    "@angular/forms": "22.3.0",
+    "@angular/localize": "22.3.0",
+    "@angular/platform-browser": "22.3.0",
+    "@angular/platform-browser-dynamic": "22.3.0",
+    "@angular/router": "22.3.0",
+    "@angular/typescript": "6.0.3",
     "@ng-bootstrap/ng-bootstrap": {
-      "@angular/common": "^22.0.0",
-      "@angular/core": "^22.0.0",
-      "@angular/forms": "^22.0.0",
-      "@angular/localize": "^22.0.0",
+      "@angular/common": "22.3.0",
+      "@angular/core": "22.3.0",
+      "@angular/forms": "22.3.0",
+      "@angular/localize": "22.3.0",
       "@angular/typescript": "6.0.3"
     }
   }

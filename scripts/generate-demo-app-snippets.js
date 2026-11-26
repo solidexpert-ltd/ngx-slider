@@ -29,7 +29,7 @@ function generateTemplate(templateFile, snippetsDir) {
 
   let codeFileContent = fs.readFileSync(path.resolve(snippetsDir, codeFile), { encoding: 'utf8' });
   // The only modification to the source file is to remove the @local prefix from slider import
-  codeFileContent = codeFileContent.replace(/@local\/ngx-slider/g, "@angular-slider/ngx-slider");
+  codeFileContent = codeFileContent.replace(/@local\/ngx-slider/g, "@solidexpert/ngx-slider");
   const codeNavHtml = navHtml(path.basename(codeFile), codeFileContent, 'typescript');
 
   let styleNavHtml = '';

@@ -6,7 +6,7 @@ Below, you will find an overview of using the slider directive, and following th
 
 The public API is made up of all declarations made available when importing the `ngx-slider` package, for instance the `Options` class:
 ```ts
-import { Options } from '@angular-slider/ngx-slider';
+import { Options } from '@solidexpert/ngx-slider';
 ```
 
 ## Slider directive

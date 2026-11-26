@@ -1,5 +1,9 @@
 # ngx-slider
-[![npm version](https://badge.fury.io/js/%40angular-slider%2Fngx-slider.svg)](https://badge.fury.io/js/%40angular-slider%2Fngx-slider)
+[![npm version](https://badge.fury.io/js/%40solidexpert%2Fngx-slider.svg)](https://www.npmjs.com/package/@solidexpert/ngx-slider)
+
+Maintained by [solidexpert-ltd](https://github.com/solidexpert-ltd).
+
+Upstream: https://github.com/angular-slider/ngx-slider
 
 Website: https://angular-slider.github.io/ngx-slider/
 
@@ -59,13 +63,13 @@ Self-contained, mobile friendly slider component for Angular based on [angularjs
 To add the slider to your Angular project:
 
 ```
-npm install --save @angular-slider/ngx-slider
+npm install --save @solidexpert/ngx-slider
 ```
 
 Once installed, add the slider to your `app.module.ts`:
 
 ```typescript
-import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { NgxSliderModule } from '@solidexpert/ngx-slider';
 
 ...
 
@@ -86,7 +90,7 @@ export class AppModule {}
 Now you can use the slider component in your app components, for example in `app.component.ts`:
 
 ```typescript
-import { Options } from '@angular-slider/ngx-slider';
+import { Options } from '@solidexpert/ngx-slider';
 ...
 
 @Component({...})
@@ -137,7 +141,7 @@ Before reporting a new bug, please look at [KNOWN_ISSUES.md](KNOWN_ISSUES.md) fo
 
 ## Bugs
 
-You can report any bugs as [Github issues](https://github.com/angular-slider/ngx-slider/issues).
+You can report any bugs as [Github issues](https://github.com/solidexpert-ltd/ngx-slider/issues).
 
 Please describe the issue in detail pasting any relevant code, or preferrably a StackBlitz with reproduction of the problem by [forking and editing this sample StackBlitz](https://stackblitz.com/edit/ngx-slider-simple-slider-example?file=src/app/app.component.ts). Please also provide the version of NPM package you are using.
 

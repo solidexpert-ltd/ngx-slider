@@ -29,15 +29,17 @@ function generatePackageJson() {
     libConfig.dependencies[dependency] = mainConfig.dependencies[dependency];
   }
   libConfig.peerDependencies = {};
+  const peerRanges = libTemplateConfig.peerDependencyRanges || {};
   for (let dependency of libTemplateConfig.dependenciesToCopyAsPeerDependenciesFromMainPackageJson) {
     libConfig.peerDependencies[dependency] =
-      mainConfig.dependencies[dependency];
+      peerRanges[dependency] || mainConfig.dependencies[dependency];
   }
 
   libConfig = Object.assign({}, libConfig, libTemplateConfig, libConfig);
   delete libConfig.keysToCopyFromMainPackageJson;
   delete libConfig.dependenciesToCopyFromMainPackageJson;
   delete libConfig.dependenciesToCopyAsPeerDependenciesFromMainPackageJson;
+  delete libConfig.peerDependencyRanges;
 
   const prettyPrintedLibConfig = JSON.stringify(libConfig, null, 2);
 

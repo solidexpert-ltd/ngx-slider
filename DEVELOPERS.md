@@ -120,12 +120,12 @@ npm run publish-gh
     ```
    3.2. Install ngx-slider as a dependency:
     ```
-    ng install @angular-slider/ngx-slider
+    ng install @solidexpert/ngx-slider
     ```
    3.3. Add the slider as module and use it somewhere in an Angular component to see it working.
 
    3.4. Overwrite the installed files by manually copying over the built files: \
-   `<ngx-slider-folder>/dist/ngx-slider` -> `<ngx-slider-demo-folder>/node_modules/@angular-slider/ngx-slider`
+   `<ngx-slider-folder>/dist/ngx-slider` -> `<ngx-slider-demo-folder>/node_modules/@solidexpert/ngx-slider`
 
    3.5. Check that the slider continues working in the app.
 
@@ -143,13 +143,9 @@ npm run publish-gh
     ```
     Note the format of the commit message and tag name for consistency.
 
-7. Publish new package to npm:
-    ```
-    npm publish ./dist/ngx-slider/
-    ```
-    **Warning: Be absolutely sure you have the correct built files in place as there is no undoing this action.**
+7. Publish `@solidexpert/ngx-slider` by pushing `master`. `.github/workflows/publish.yml` publishes `dist/ngx-slider` with trusted publishing. Do not publish the package locally, and do not publish under `@angular-slider/ngx-slider`.
 
-8. Go to [package page on npmjs.org](https://www.npmjs.com/package/@angular-slider/ngx-slider) and check that the new version is available and the README page displays correctly.
+8. Go to [package page on npmjs.org](https://www.npmjs.com/package/@solidexpert/ngx-slider) and check that the new version is available and the README page displays correctly.
 
 9. Go back to the demo app from step 3. and check that published package works with it:
 
